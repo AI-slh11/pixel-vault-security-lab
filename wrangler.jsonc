@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "pixel-vault-training-lab",
+  "main": "cloudflare-worker.js",
+  "compatibility_date": "2026-11-24",
+  "compatibility_flags": [],
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": "app/static",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pixel-vault-training",
+      "database_id": "cf092b5f-9fee-4ddb-bcbb-490cf2a2d8d5",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": { "PUBLIC_DEPLOYMENT": "true" }
+}

@@ -1,0 +1,13 @@
+.venv/
+.venv-workers/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+instance/
+.env
+.dev.vars
+.wrangler/
+node_modules/
+pylock.toml
+uv.lock

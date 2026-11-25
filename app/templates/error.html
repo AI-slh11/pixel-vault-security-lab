@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}{{ code }} · Not found{% endblock %}{% block content %}<section class="empty-state error-state"><span>{{ code }}</span><h1>We lost that level.</h1><p>{{ message }}</p><a class="button button-primary" href="{{ url_for('main.index') }}">Back to the vault</a></section>{% endblock %}
